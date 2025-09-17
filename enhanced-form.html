@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Happiest Countries</title>
+</head>
+<body>
+
+  <header>
+    <h1>The Happiest Countries in the World</h1>
+    <p>This page highlights the <strong>happiest countries</strong>, presents a table with rankings, includes media, and provides a form for collecting feedback.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Top 5 Happiest Countries (2024)</h2>
+    <ol>
+      <li>Finland</li>
+      <li>Denmark</li>
+      <li>Iceland</li>
+      <li>Sweden</li>
+      <li>Norway</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Happiness Index Rankings</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Country</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Finland</td>
+          <td>7.8</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Denmark</td>
+          <td>7.6</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Iceland</td>
+          <td>7.5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Sweden</td>
+          <td>7.4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Norway</td>
+          <td>7.3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Highlights</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Happy people in Finland" width="400">
+      <figcaption>Finland has ranked the happiest country for several years.</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <video width="400" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Share Your Thoughts</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        
+        <label for="country">Your Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country" required>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Your Opinion</legend>
+        
+        <label for="happiest">Which country do you think is the happiest?</label>
+        <select id="happiest" name="happiest" required>
+          <option value="">--Choose a country--</option>
+          <option value="finland">Finland</option>
+          <option value="denmark">Denmark</option>
+          <option value="iceland">Iceland</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
+        </select>
+        
+        <p>Would you like to receive updates about the Happiness Report?</p>
+        <label><input type="checkbox" name="updates" checked> Yes, sign me up</label>
+        
+        <p>How do you rate happiness in your country?</p>
+        <label><input type="radio" name="rating" value="high" required> High</label>
+        <label><input type="radio" name="rating" value="medium"> Medium</label>
+        <label><input type="radio" name="rating" value="low"> Low</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Additional Information</legend>
+        
+        <label for="website">Personal Blog/Website (if any):</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number">
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+      </fieldset>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Happiest Countries Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
